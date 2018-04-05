@@ -24,11 +24,11 @@ var app = app || {};
     })
   };
 
-    adminView.verify = function(ctx, next) {
-      if(!localStorage.token) $('.admin').addClass('admin-only');
-      else $('.admin').show();
-      next();
-    }
+  adminView.verify = function(ctx, next) {
+    if(!localStorage.token) $('.admin').addClass('admin-only');
+    else $('.admin').show();
+    next();
   }
+
   module.adminView = adminView;
 })(app)
