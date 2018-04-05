@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Social Run</title>
-  <link rel="stylesheet" href="./styles/reset.css" />
-  <link rel="stylesheet" href="./styles/icons.css" />
-  <link rel="stylesheet" href="./styles/base.css" />
-  <link rel="stylesheet" href="./styles/layout.css" />
-  <link rel="stylesheet" href="./styles/module.css" />
+  <link rel="stylesheet" href="/styles/reset.css" />
+  <link rel="stylesheet" href="/styles/icons.css" />
+  <link rel="stylesheet" href="/styles/base.css" />
+  <link rel="stylesheet" href="/styles/layout.css" />
+  <link rel="stylesheet" href="/styles/module.css" />
 
   <!-- Application Templates -->
   <script type="text/x-handlebars-template" id="error-template">
@@ -17,7 +17,7 @@
 
   <script type="text/x-handlebars-template" id="run-list-template">
     <li class="run-items-new" data-runid={{run_id}}>
-      <div class="run-items-image"><a href="/runs/{{run_id}}"><img src=/images/{{image_url}} /></a></div>
+      <div class="run-items-image"><a href="/runs/{{run_id}}"><img src="/images/{{image_url}}" /></a></div>
         <table class="run-container" border="0" cellpadding="0">
           <tr>
             <td class="run-items-name" colspan="3">
@@ -140,11 +140,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 
   <!-- Application Resources -->
-  <script src="./scripts/models/run.js" type="text/javascript"></script>
-  <script src="./scripts/views/run-view.js" type="text/javascript"></script>
-  <script src="./scripts/views/error-view.js" type="text/javascript"></script>
-  <script src="./scripts/views/admin-view.js" type="text/javascript"></script>
-  <script src="./scripts/views/about-view.js" type="text/javascript"></script>
-  <script src="./scripts/controllers/routes.js" type="text/javascript"></script>
+  <script src="/scripts/models/run.js" type="text/javascript"></script>
+  <script src="/scripts/views/run-view.js" type="text/javascript"></script>
+  <script src="/scripts/views/error-view.js" type="text/javascript"></script>
+  <script src="/scripts/views/admin-view.js" type="text/javascript"></script>
+  <script src="/scripts/views/about-view.js" type="text/javascript"></script>
+  <script src="/scripts/controllers/routes.js" type="text/javascript"></script>
 </body>
 </html>
