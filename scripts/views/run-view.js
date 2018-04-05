@@ -26,6 +26,7 @@ var app = app || {};
     $('.detail-view').show();
     $('.run-detail').empty();
     $('.run-detail').append(app.Run.all[routeIndex].detailHtml());
+
     console.log(app.Run.all[routeIndex]);
     if(app.Run.all[routeIndex].restaurants){
       console.log(app.Run.all[routeIndex].restaurants);
@@ -44,10 +45,12 @@ var app = app || {};
       {
         $('.bar-list:last').append(`<li>${bars[i]}</li>`)
         console.log($('.bar-list:last'));
+
       }} 
 
     $('#vote-btn').on('click', function(){
       let runID=event.target.getAttribute('data-id');
+
       $('#vote-btn:last').prop('disabled',true),
       console.log(ENV);
       console.log(runID);
@@ -56,6 +59,8 @@ var app = app || {};
           app.Run.all[routeIndex].votes=newVotes;
           $('#vote-btn').text(`${app.Run.all[routeIndex].votes} likes`)})
         .catch(console.error)
+=======
+
     });
   }
   module.runView = runView;
