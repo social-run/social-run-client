@@ -42,6 +42,7 @@ var app = app || {};
             page('/');
           }
         })
+
         .catch(() =>page('/'));
     
       adminView.verify = function(ctx, next) {
@@ -51,5 +52,6 @@ var app = app || {};
       }
     }
     )}
+
   module.adminView = adminView;
 })(app);
