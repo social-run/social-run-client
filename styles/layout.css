@@ -73,9 +73,6 @@ a {
     float: left;
 }
 
-.run-items-name {
-}
-
 .run-items-distance {
     width: 40%;
 }
@@ -97,10 +94,6 @@ a {
     width: 250px;
     height: auto;
 }
-
-/* .run-items-old img {
-    width: 90px;
-  } */
 
 .run-items-new img {
     width: 90px;
