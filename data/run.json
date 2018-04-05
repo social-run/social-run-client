@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Green Lake Trail",
+    "image_url": "green_lake_trail.jpg",
+    "distance": "2.78 miles",
+    "elevation": "44 feet",
+    "votes": "",
+    "route_url": "https://www.google.com/maps/d/u/0/edit?mid=12RFkXWqfNvgSrEwE6rdog5LRvu_92BSW&ll=47.678528575894084%2C-122.34061111114505&z=15",
+    "description": "The inner loop around Green Lake Park"
+  },
+  {
+    "name": "Myrtle Edwards Park Trail",
+    "image_url": "myrtle_edwards_trail.jpg",
+    "distance": "5.8 miles",
+    "elevation": "59 feet",
+    "votes": "",
+    "route_url": "https://www.google.com/maps/d/edit?mid=1cKvVc5hovg03rEcAbaVBKa2ESMeTF7pb&ll=47.61861972818018%2C-122.36016992065424&z=14",
+    "description": "From the Seattle-Bainbridge Ferry Terminal, through the Sculpture Park, Myrtle Edwards Park, Centennial Park, to Elliott Bay Park, and back."
+  },
+  {
+    "name": "Alki Beach Trail",
+    "image_url": "alki_beach_trail.jpg",
+    "distance": "5.25 miles",
+    "elevation": "50 feet",
+    "votes": "",
+    "route_url": "https://www.google.com/maps/d/edit?mid=1PJQ8UwPpzGf_yyaM-88CuO8r5TVV8I5X&ll=47.58583219119194%2C-122.400305&z=14",
+    "description": "From the West Seattle Ferry Terminal at Seacrest Park to the Alki Point Lighthouse and back."
+  },
+  {
+    "name": "Fremont Trail",
+    "image_url": "fremont_trail.jpg",
+    "distance": "3.92 miles",
+    "elevation": "68 feet",
+    "votes": "",
+    "route_url": "https://www.google.com/maps/d/edit?mid=1xumt_7cnFqRYAEQbL6KzagLmwxe_tuY0&ll=47.6524416487931%2C-122.35046873016358&z=15",
+    "description": "From Hale's Brewery through the Fremont neighborhood to Gasworks Park and back along the Burke-Gilman trail."
+  },
+  {
+    "name": "Arboretum Trail",
+    "image_url": "arboretum_trail.jpg",
+    "distance": "3.63",
+    "elevation": "246 feet",
+    "votes": "",
+    "route_url": "https://www.google.com/maps/d/edit?mid=1E5sPwTN7eNTrgNur4v29HBl3FtSl60yy&ll=47.637487183440314%2C-122.29619000000002&z=14",
+    "description": "A loop from the Arboretum's Botanical Gardens, through Foster Island, Marsh Island, over the 520 bridge, through the Japanese Garden, and back to the start."
+  },
+  {
+    "name": "Discovery Park Trail",
+    "image_url": "discovery_park_trail.jpg",
+    "distance": "2.74 miles",
+    "elevation": "381 feet",
+    "votes": "",
+    "route_url": "https://www.google.com/maps/d/edit?mid=1DLm4vgkLWOEflj4-TabCPj9JdKulEMAn&ll=47.65953435034827%2C-122.41584499999999&z=15",
+    "description": "The loop trail through Discovery Park"
+  },
+  {
+    "name": "Volunteer Park Trail",
+    "image_url": "volunteer_park_trail.jpg",
+    "distance": "2.12 miles",
+    "elevation": "195 feet",
+    "votes": "",
+    "route_url": "https://www.google.com/maps/d/edit?mid=1jC1f8aQh9YGz6_MxwlGAjxQt0m1zUxJO&ll=47.62880489371456%2C-122.31207&z=16",
+    "description": "A loop from Volunteer Park through the Montlake neighborhood, around the reservoir, and back to the start."
+  },
+  {
+    "name": "Golden Gardens Trail",
+    "image_url": "golden_gardens_trail.jpg",
+    "distance": "4.52 miles",
+    "elevation": "60 feet",
+    "votes": "",
+    "route_url": "https://www.google.com/maps/d/edit?mid=1b55vedbUN92dm-jsaB8Bhz57YYa_uY8_&ll=47.68001821414825%2C-122.40112000000005&z=14",
+    "description": "From Meadow Point at the top of Golden Gardens Park, down to the Ballard Locks and back."
+  },
+  {
+    "name": "Magnuson Park Trail",
+    "image_url": "magnuson_park_trail.jpg",
+    "distance": "2.5 miles",
+    "elevation": "69 feet",
+    "votes": "",
+    "route_url": "https://www.google.com/maps/d/edit?mid=1iYsjttm5uwMVZ4evLv__xQx6ZS-wXGIl&ll=47.68007932745887%2C-122.25337000000002&z=15",
+    "description": "A loop along the waterfront and frog trail in Magnuson Park."
+  },
+  {
+    "name": "Seward Park Trail",
+    "image_url": "seward_park_trail.jpg",
+    "distance": "2.39 miles",
+    "elevation": "310 feet",
+    "votes": "",
+    "route_url": "https://www.google.com/maps/d/edit?mid=1KbxqR4-u6Ike45w_qdrduDxTYw5Veiel&ll=47.55562948997317%2C-122.25180999999998&z=15",
+    "description": "A loop around Bailey Peninsula in Seward Park."
+  }
+]

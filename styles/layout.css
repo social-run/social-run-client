@@ -1,0 +1,150 @@
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    /* border-bottom: solid 1px lightgray;
+    max-width: 480px; */
+}
+
+header .header-content {
+    display: table;
+}
+
+header img {
+    width: 90%;
+    margin: 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header span {
+    font-family: pt-sans, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.icon-menu {
+    color: #2DC9D7;
+    margin: 10px 10px 0px 0px;
+    float: right;
+}
+
+.nav-menu {
+    display: none;
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), gray; */
+    /* opacity: .6; */
+    /* background: rgba(76, 175, 80, 0.3); */
+}
+
+.nav-menu li {
+    margin: 10px 10px;
+}
+
+.list-view {
+    padding-top: 65px;
+    max-width: 480px;
+}
+
+.detail-view {
+    padding-top: 85px;
+}
+
+.run-items-new {
+    list-style: none;
+    margin: 15px 0px;
+    /* box-sizing: border-box; */
+    border-top: solid 1px lightgray;
+}
+
+a {
+    text-decoration: none;
+    color: none;
+    color: #2DC9D7;
+}
+
+.run-items-new td {
+    padding: 5px;
+}
+
+.run-items-image {
+    float: left;
+}
+
+.run-items-name {
+}
+
+.run-items-distance {
+    width: 40%;
+}
+
+.run-items-elevation {
+    width: 30%;
+}
+
+.run-items-votes {
+    width: 30%;
+}
+
+.run-items-votes {
+    vertical-align: bottom;
+}
+
+.run-items-detail {
+    vertical-align: top;
+    width: 250px;
+    height: auto;
+}
+
+/* .run-items-old img {
+    width: 90px;
+  } */
+
+.run-items-new img {
+    width: 90px;
+}
+
+.run-detail h3 {
+    font-weight: bold;
+    color: #999;
+    margin: 5px 0px;
+}
+
+.run-detail iframe {
+    max-width: 480px;
+    width: 90%;
+    height: 300px;
+    margin: 10px 0px;
+    border: solid 1px black;
+}
+
+.run detail h4 {
+    display: inline;
+}
+
+@media only screen and (min-width: 480px) {
+
+    .icon-menu {
+        display: none;
+    }    
+
+    .nav-menu {
+        display: block;
+        margin-bottom: 10px;
+      }    
+    
+    .nav-menu li {
+        display: inline-block;
+        margin: 0 60px;
+    }
+    
+    .list-view {
+        padding-top: 90px;
+    }
+
+    .detail-view {
+        padding-top: 105px;
+    }
+  }
