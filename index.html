@@ -47,9 +47,8 @@
   <script type="text/x-handlebars-template" id="run-detail-template">
     <div class="run-container">
       <h3>{{name}}</h3>
-      <iframe src="social-run-client/{{route_url}}" width="640" height="480" frameborder="0"></iframe>
+      <iframe src="{{route_url}}" width="640" height="480" frameborder="0"></iframe>
       <div class="run-details">
-        <!-- For GitHub deployment, include 'social-run-client/' for map. This will break the live-server view. To view in live-server, remove  'social-run-client/', but do not push to GitHub without this!-->
         <h4>Distance: {{distance}} miles</h4>
         <p>Elevation: {{elevation}} feet</p>
         <p>{{description}}</p>
