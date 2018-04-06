@@ -8,7 +8,7 @@ var app = app || {};
 
   function resetView() {
     $('.container').hide();
-    // $('.nav-menu').slideUp(350);
+    $('.nav-menu').slideUp(350);
   }
 
   const runView = {};
@@ -38,8 +38,8 @@ var app = app || {};
       for(let i=0; i<bars.length; i++)
       {
         $('.bar-list:last').append(`<li>${bars[i]}</li>`)
+      }}
 
-      }} 
 
     $('#vote-btn').on('click', function(){
       if(localStorage.username)
@@ -58,6 +58,7 @@ var app = app || {};
         app.adminView.initAdminPage()
       }});
   }
+
   module.runView = runView;
 }
 )(app)
