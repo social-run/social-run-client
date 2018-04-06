@@ -5,6 +5,7 @@ var app = app || {};
 (function (module) {
   const adminView = {};
 
+
   adminView.initAdminPage = function (ctx) {
     $('.nav-menu').slideUp(350);
     $('.admin-view').show();
