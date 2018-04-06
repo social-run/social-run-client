@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Social Run</title>
-  <base href="https://social-run.github.io/social-run-client/">
+  <!-- <base href="https://social-run.github.io/social-run-client/"> -->
   <!-- Comment in for deployment visibility, comment out for live-server visibility -->
   <link rel="stylesheet" href="./styles/reset.css" />
   <link rel="stylesheet" href="./styles/icons.css" />
@@ -19,11 +19,11 @@
 
   <script type="text/x-handlebars-template" id="run-list-template">
     <li class="run-items-new" data-runid={{run_id}}>
-      <div class="run-items-image"><a href="/runs/{{run_id}}"><img src="images/{{image_url}}" /></a></div>
+      <div class="run-items-image"><a href="/social-run-client/runs/{{run_id}}"><img src="images/{{image_url}}" /></a></div>
         <table class="run-container" border="0" cellpadding="0">
           <tr>
             <td class="run-items-name" colspan="3">
-              <h3><a href="/runs/{{run_id}}">{{name}}</a></h3>
+              <h3><a href="/social-run-client/runs/{{run_id}}">{{name}}</a></h3>
             </td>
           </tr>
           <tr>
@@ -86,14 +86,14 @@
 </head>
 <body>
   <header>
-      <div class="icon-menu"></div>
+      <div class="icon-menu" href='/social-run-client/admin'></div>
       <div class="header-content">
         <img src="images/social_run_title.png" />
     </div>
     <nav class="nav-menu">
       <ul>
-        <li id="home"><a href="/"><h3>Home</h3></a></li>
-        <li id="about"><a href="/about"><h3>About</h3></a></li>
+        <li id="home"><a href="/social-run-client/"><h3>Home</h3></a></li>
+        <li id="about"><a href="/social-run-client/about"><h3>About</h3></a></li>
       </ul>
       <section class="admin-view">
           <h2 class="view-title"></h2>
@@ -162,23 +162,6 @@
       </section>
     </section>
   </main>
-
-  <!-- This is all mobile view stuff. !-->
-  <!-- <section class="mobile-menu-view container">
-      <h2>Menu</h2>
-      <a href='/' class=icon-shrink2></a>
-      <ul>
-        <li><a href='/social' class='icon-bubbles'></a></li>
-        <li><a href='/pref' class='icon-cogs'></a></li>
-        <li><a href='/about' class='icon-bullhorn'></a></li>
-        <li><a href="/admin" class='icon-key2'>login</a></li>
-        <li></li>
-      </ul>
-    </section>
-  <section class='mobile-social-view container'></section>
-  <section class='mobile-pref-view container'></section>
-  <section class='mobile-about-view container'></section>
-  <section class='mobile-admin-view container'></section> -->
   
   <!-- External CDN Resources -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
