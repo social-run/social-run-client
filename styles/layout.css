@@ -117,6 +117,35 @@ a {
     display: inline;
 }
 
+/* About View */
+.about-view {
+    padding-top: 100px;
+}
+
+.about-view p {
+    margin: 20px 0;
+}
+
+#aboutLacy div {
+    float: left;
+}
+
+#aboutRichard div {
+    float: right;
+}
+
+#aboutPanos div {
+    float: left;
+}
+
+#aboutMatt div {
+    float: right;
+}
+
+.aboutImg {
+    width: 150px;
+}
+
 @media only screen and (min-width: 480px) {
 
     .icon-menu {

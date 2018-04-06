@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Social Run</title>
-  <base href="https://social-run.github.io/social-run-client/">
+  <!-- <base href="https://social-run.github.io/social-run-client/"> -->
   <!-- Comment in for deployment visibility, comment out for live-server visibility -->
   <link rel="stylesheet" href="./styles/reset.css" />
   <link rel="stylesheet" href="./styles/icons.css" />
@@ -81,7 +81,6 @@
     </section>
    
     <section class="list-view container">
-      <p>Social Run is a way for running groups to choose where to run. Group members can vote on which running route they want to meet at based on location, distance, and difficulty. They can also view surrounding bars and restaurants to decide where to go after the run.</p>
       <section class="run-list">
         <ul id="run-list-new"></ul>
       </section>
@@ -100,22 +99,41 @@
     </section>
 
     <section class="about-view container">
-      <h1>Our Team</h1>
-      <h2><strong>Lacy Hogan</strong></h2>
-      <!-- <img src="images/lacyhogan.jpg"> -->
-      <p>As a student at Code Fellows, she is studying to be a Full-Stack JavaScript developer. Prior to beginning her new discipline, she was a contract specialist for over 14 years specializing in government contracts. She has performed this function in several capacities, supporting several agencies and organizations. Most recently, she supported the National Oceanic and Atmospheric Administration in Seattle, WA. She is presently a Master Sergeant in the US Air Force reserves. After she completes her education, she is interested in a career in front-end web developer, creating innovative and user-friendly products.</p>
-      
-      <h2><strong>Richard Tae</strong></h2>
-      <!-- <img src="images/richardtae.jpg"> -->
-      <p>Richard Tae, born in Los Angeles and raised in Seattle WA.  Served in the Air Force as an information technology specialist then worked for a start-up in San Francisco as Operations.  Being surrounded by software developers while growing up, I started to get interested in the programming field.  With my eagerness to always learn and to better myself, I decided to attend Code Fellows and learn programming.  With the knowledge from Code Fellows I plan to work in the tech industry and I am excited for my future endeavors.</p>
+      <h1 id="aboutSocial">About Social Run</h1>
+      <p>Social Run is a way for running groups to choose where to run. Group members can vote on which running route they want to meet at based on location, distance, and difficulty. They can also view surrounding bars and restaurants to decide where to go after the run.</p>
 
-      <h2><strong>Panos Kumasaka</strong></h2>
-      <!-- <img src="images/panoskumasaka.jpg"> -->
-      <p>Lorem Ipsum</p>
-      
-      <h2><strong>Matt Harding</strong></h2>
-      <!-- <img src="images/mattharding.jpg"> -->
-      <p>Matt is a washed-up internet dancing sensation-turned stay-at-home dad. He is learning to code so his resume has something on it that isn't those two things. He once went sledding in Antarctica, swam with a humpback whale in Tonga, barfed atop Kilimanjaro, and watched a shooting star cross over the dunes of Timbuktu.</p>
+      <h1 id="aboutTeam">About Our Team</h1>
+      <section id="aboutLacy">
+        <div>
+          <h2><strong>Lacy Hogan</strong></h2>
+          <img class="aboutImg" src="images/lacyhogan.jpg">
+        </div>
+        <p>She is a Full-Stack JavaScript developer. Prior to beginning her new discipline, she was a contract specialist for over 14 years specializing in government contracts. She has performed this function in several capacities, supporting several agencies and organizations. Most recently, she supported the National Oceanic and Atmospheric Administration in Seattle, WA. She is presently a Master Sergeant in the US Air Force reserves. She is interested in a career in front-end web developer, creating innovative and user-friendly products.</p>
+      </section>
+
+      <section id="aboutRichard">
+        <div>
+          <h2><strong>Richard Tae</strong></h2>
+          <img class="aboutImg" src="images/richardtae.jpg">
+        </div>
+        <p>He born in Los Angeles and raised in Seattle WA.  Served in the Air Force as an information technology specialist then worked for a start-up in San Francisco as Operations.  Being surrounded by software developers while growing up, I started to get interested in the programming field.  With my eagerness to always learn and to better myself, I decided to attend Code Fellows and learn programming.  With the knowledge from Code Fellows I plan to work in the tech industry and I am excited for my future endeavors.</p>
+      </section>
+
+      <section id="aboutPanos">
+        <div>
+         <h2><strong>Panos Kumasaka</strong></h2>
+         <img class="aboutImg" src="images/panoskumasaka.jpg">
+        </div>
+        <p>Matt is a washed-up internet dancing sensation-turned stay-at-home dad. He is learning to code so his resume has something on it that isn't those two things. He once went sledding in Antarctica, swam with a humpback whale in Tonga, barfed atop Kilimanjaro, and watched a shooting star cross over the dunes of Timbuktu</p>
+      </section>
+
+      <section id="aboutMatt">
+        <div>
+          <h2><strong>Matt Harding</strong></h2>
+          <img class="aboutImg" src="images/mattharding.jpg">
+        </div>
+        <p>Matt is a washed-up internet dancing sensation-turned stay-at-home dad. He is learning to code so his resume has something on it that isn't those two things. He once went sledding in Antarctica, swam with a humpback whale in Tonga, barfed atop Kilimanjaro, and watched a shooting star cross over the dunes of Timbuktu.</p>
+      </section>
     </section>
   </main>
 
