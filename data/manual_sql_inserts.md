@@ -1,3 +1,5 @@
+/c runs;
+
 CREATE TABLE IF NOT EXISTS
   runs (
   run_id SERIAL PRIMARY KEY,
