@@ -16,6 +16,18 @@
   </script>
 
   <script type="text/x-handlebars-template" id="run-list-template">
+    <!-- <li class="run-items-old" data-runid={{run_id}}>
+      <div class="run-container">
+        <img src="images/{{image_url}}" />
+        <div class="book-overlay">
+          <h3>{{name}}</h3>
+          <p>{{distance}}</p>
+          <p>{{elevation}}</p>
+          <P>Total Votes: {{votes}}</P>
+          <p class="detail-button"><a href="/runs/{{run_id}}">View Details</a></p>
+        </div>
+      </div>
+    </li> -->
     <li class="run-items-new" data-runid={{run_id}}>
       <div class="run-items-image"><a href="/runs/{{run_id}}"><img src=/images/{{image_url}} /></a></div>
         <table class="run-container" border="0" cellpadding="0">
@@ -35,11 +47,12 @@
             </td>
             <td class="run-items-votes">
               <h6>0 votes</h6>
+
 <!-- Swap this line in when we have a vote counter -->
-              <!-- <h6>{{votes}} votes</h6> -->
-            </td>
-          </tr>
-        </table>
+                <!-- <h6>{{votes}} votes</h6> -->
+              </td>
+            </tr>
+          </table>
     </li>
   </script>
 
@@ -83,8 +96,8 @@
       </div>
     </div>
   </script>
-</head>
 
+</head>
 <body>
   <header>
       <div class="icon-menu icon-enlarge2"></div>
@@ -96,9 +109,15 @@
         <li><a href="/"><h3>Home</h3></a></li>
         <li><a href="/aboutUs"><h3>About</h3></a></li>
       </ul>
+      <section class="admin-view">
+          <h2 class="view-title">Log In</h2>
+          <form id="admin-form">
+            <input type="text" name="passphrase" placeholder="login">
+            <button type="submit">Log In</button>
+          </form>
+        </section>
     </nav>
   </header>
-
   <main>
     <section class="error-view container">
       <h2 class="view-title">Looks like you have made a wrong turn</h2>
@@ -106,25 +125,38 @@
     </section>
    
     <section class="list-view container">
-      <p>Social Run is a way for running groups to choose where to run. Group members can vote on which running route they want to meet at based on location, distance, and difficulty. They can also view surrounding bars and restaurants to decide where to go after the run.</p>
+      <!-- <p>Social Run is a way for running groups to choose where to run. Group members can vote on which running route they want to meet at based on location, distance, and difficulty. They can also view surrounding bars and restaurants to decide where to go after the run.</p> -->
       <section class="run-list">
+        <!-- <ul id="run-list-old"></ul> -->
         <ul id="run-list-new"></ul>
       </section>
     </section>
 
     <section class="detail-view container">
-      <section class="run-detail"></section>
+      <section class="run-detail">
+      </section>
     </section>
     
     <section class="admin-view container">
       <h2 class="view-title">Log In</h2>
       <form id="admin-form">
-        <input type="number" name="passphrase" placeholder="login">
+        <input type="text" name="passphrase" placeholder="login">
+        <button type="submit">Log In</button>
+      </form>
+    </section><section class="admin-view container">
+      <h2 class="view-title">Log In</h2>
+      <form id="admin-form">
+        <input type="text" name="passphrase" placeholder="login">
         <button type="submit">Log In</button>
       </form>
     </section>
 
     <section class="about-view container">
+        <!-- <h2>About Social Run</h2>
+        <div class="col-xs-12">
+            <p>Social Run is a way for running groups to choose where to run. Group members can vote on which running route they want to meet at based on location, distance, and difficulty. They can also view surrounding bars and restaurants to decide where to go after the run.</p>
+        </div> -->
+        <!-- <section id="about-team" class ="row"> -->
       <h1>Our Team</h1>
       <h2><strong>Lacy Hogan</strong></h2>
       <!-- <img src="images/lacyhogan.jpg"> -->
@@ -141,6 +173,8 @@
       <h2><strong>Matt Harding</strong></h2>
       <!-- <img src="images/mattharding.jpg"> -->
       <p>Matt is a washed-up internet dancing sensation-turned stay-at-home dad. He is learning to code so his resume has something on it that isn't those two things. He once went sledding in Antarctica, swam with a humpback whale in Tonga, barfed atop Kilimanjaro, and watched a shooting star cross over the dunes of Timbuktu.</p>
+        <!-- </section>
+      </div>   -->
     </section>
   </main>
 
@@ -151,14 +185,14 @@
       <ul>
         <li><a href='/social' class='icon-bubbles'></a></li>
         <li><a href='/pref' class='icon-cogs'></a></li>
-        <li><a href='/aboutUs' class='icon-bullhorn'></a></li>
+        <li><a href='/aboutus' class='icon-bullhorn'></a></li>
         <li><a href="/admin" class='icon-key2'>login</a></li>
         <li></li>
       </ul>
     </section>
   <section class='mobile-social-view container'></section>
   <section class='mobile-pref-view container'></section>
-  <section class='mobile-aboutUs-view container'></section>
+  <section class='mobile-aboutus-view container'></section>
   <section class='mobile-admin-view container'></section>
   
   <!-- External CDN Resources -->
