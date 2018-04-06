@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Social Run</title>
+  <base href="https://social-run.github.io/social-run-client/">
+  <!-- Comment in for deployment visibility, comment out for live-server visibility -->
   <link rel="stylesheet" href="./styles/reset.css" />
   <link rel="stylesheet" href="./styles/icons.css" />
   <link rel="stylesheet" href="./styles/base.css" />
@@ -16,20 +18,8 @@
   </script>
 
   <script type="text/x-handlebars-template" id="run-list-template">
-    <!-- <li class="run-items-old" data-runid={{run_id}}>
-      <div class="run-container">
-        <img src="images/{{image_url}}" />
-        <div class="book-overlay">
-          <h3>{{name}}</h3>
-          <p>{{distance}}</p>
-          <p>{{elevation}}</p>
-          <P>Total Votes: {{votes}}</P>
-          <p class="detail-button"><a href="/runs/{{run_id}}">View Details</a></p>
-        </div>
-      </div>
-    </li> -->
     <li class="run-items-new" data-runid={{run_id}}>
-      <div class="run-items-image"><a href="/runs/{{run_id}}"><img src=/images/{{image_url}} /></a></div>
+      <div class="run-items-image"><a href="/runs/{{run_id}}"><img src="images/{{image_url}}" /></a></div>
         <table class="run-container" border="0" cellpadding="0">
           <tr>
             <td class="run-items-name" colspan="3">
@@ -46,11 +36,8 @@
               <h5>{{elevation}}</h5><h6>feet</h6>
             </td>
             <td class="run-items-votes">
-              <h6>0 votes</h6>
-
-<!-- Swap this line in when we have a vote counter -->
-                <!-- <h6>{{votes}} votes</h6> -->
-              </td>
+              <h6>{{votes}} votes</h6>
+            </td>
             </tr>
           </table>
     </li>
@@ -86,8 +73,7 @@
             </tr>
           </table>
           <div class="vote-container">
-            <span class="vote-counter">{{votes}}</span>
-            <button id="vote-btn" data-id={{run_id}} class="admin">Vote</button>
+            <p>{{votes}}</p> <button id="vote-btn" data-id={{run_id}} class="admin">Vote</button>
           </div>
         </div>
         <div class="map-box">
@@ -100,17 +86,17 @@
 </head>
 <body>
   <header>
-      <div class="icon-menu icon-enlarge2"></div>
+      <div class="icon-menu"></div>
       <div class="header-content">
-        <img src="/images/social_run_title.png" />
+        <img src="images/social_run_title.png" />
     </div>
     <nav class="nav-menu">
       <ul>
-        <li><a href="/"><h3>Home</h3></a></li>
-        <li><a href="/about"><h3>About</h3></a></li>
+        <li id="home"><a href="/"><h3>Home</h3></a></li>
+        <li id="about"><a href="/about"><h3>About</h3></a></li>
       </ul>
       <section class="admin-view">
-          <h2 class="view-title">Log In</h2>
+          <h2 class="view-title"></h2>
           <form id="admin-form">
             <input type="text" name="passphrase" placeholder="login">
             <button type="submit">Log In</button>
@@ -125,89 +111,74 @@
     </section>
    
     <section class="list-view container">
-
       <section class="run-list">
-        <!-- <ul id="run-list-old"></ul> -->
         <ul id="run-list-new"></ul>
       </section>
     </section>
 
     <section class="detail-view container">
-      <section class="run-detail">
-      </section>
-    </section>
-    
-    <section class="admin-view container">
-      <h2 class="view-title">Log In</h2>
-      <form id="admin-form">
-        <input type="text" name="passphrase" placeholder="login">
-        <button type="submit">Log In</button>
-      </form>
-    </section><section class="admin-view container">
-      <h2 class="view-title">Log In</h2>
-      <form id="admin-form">
-        <input type="text" name="passphrase" placeholder="login">
-        <button type="submit">Log In</button>
-      </form>
+      <section class="run-detail"></section>
     </section>
 
     <section class="about-view container">
-
       <h1 id="aboutSocial">About Social Run</h1>
       <p>Social Run is a way for running groups to choose where to run. Group members can vote on which running route they want to meet at based on location, distance, and difficulty. They can also view surrounding bars and restaurants to decide where to go after the run.</p>
 
       <h1 id="aboutTeam">About Our Team</h1>
-      <section id="aboutLacy">
-        <div>
-          <h2><strong>Lacy Hogan</strong></h2>
-          <img class="aboutImg" src="images/lacyhogan.jpg">
-        </div>
-        <p>She is a Full-Stack JavaScript developer. Prior to beginning her new discipline, she was a contract specialist for over 14 years specializing in government contracts. She has performed this function in several capacities, supporting several agencies and organizations. She is also presently a Master Sergeant in the US Air Force reserves. She is interested in a career in front-end web developer, creating innovative and user-friendly products.</p>
+      <section id="aboutOne">
+        <section id="aboutLacy">
+          <div>
+            <h2><strong>Lacy Hogan</strong></h2>
+            <img class="aboutImg" src="images/lacyhogan.jpg">
+          </div>
+          <p>She is a Full- Stack Java Script developer. Prior to beginning her new discipline, she was a contract specialist for over 14 years specializing in government contracts. She has performed this function in several capacities, supporting several agencies and organizations. She is also presently a Master Sergeant in the US Air Force reserves. She is interested in a career in front-end web developer, creating innovative and user-friendly products.</p>
+        </section>
+
+        <section id="aboutRichard">
+          <div>
+            <h2><strong>Richard Tae</strong></h2>
+            <img class="aboutImg" src="images/richardtae.jpg">
+          </div>
+          <p>He was born in Los Angeles and raised in Seattle WA.  Served in the Air Force as an information technology specialist then worked for a start-up in San Francisco as Operations.  Being surrounded by software developers while growing up, I started to get interested in the programming field.  With my eagerness to always learn and to better myself, I decided to attend Code Fellows and learn programming.  With the knowledge from Code Fellows I plan to work in the tech industry and I am excited for my future endeavors.</p>
+        </section>
       </section>
 
-      <section id="aboutRichard">
-        <div>
-          <h2><strong>Richard Tae</strong></h2>
-          <img class="aboutImg" src="images/richardtae.jpg">
-        </div>
-        <p>He was born in Los Angeles and raised in Seattle WA.  Served in the Air Force as an information technology specialist then worked for a start-up in San Francisco as Operations.  Being surrounded by software developers while growing up, I started to get interested in the programming field.  With my eagerness to always learn and to better myself, I decided to attend Code Fellows and learn programming.  With the knowledge from Code Fellows I plan to work in the tech industry and I am excited for my future endeavors.</p>
-      </section>
+      <section id="aboutTwo">
+        <section id="aboutMatt">
+          <div>
+            <h2><strong>Matt Harding</strong></h2>
+            <img class="aboutImg" src="images/mattharding.jpg">
+          </div>
+          <p>He is a washed-up internet dancing sensation-turned stay-at-home dad. He is learning to code so his resume has something on it that isn't those two things. He once went sledding in Antarctica, swam with a humpback whale in Tonga, barfed atop Kilimanjaro, and watched a shooting star cross over the dunes of Timbuktu.</p>
+        </section>
 
-      <section id="aboutMatt">
-        <div>
-          <h2><strong>Matt Harding</strong></h2>
-          <img class="aboutImg" src="images/mattharding.jpg">
-        </div>
-        <p>He is a washed-up internet dancing sensation-turned stay-at-home dad. He is learning to code so his resume has something on it that isn't those two things. He once went sledding in Antarctica, swam with a humpback whale in Tonga, barfed atop Kilimanjaro, and watched a shooting star cross over the dunes of Timbuktu.</p>
+        <section id="aboutPanos">
+          <div>
+            <h2><strong>Panos Kumasaka</strong></h2>
+            <img class="aboutImg" src="images/panoskumasaka.jpg">
+          </div>
+          <p>He is a full stack java student with a passion for creating.</p>
+        </section>
       </section>
-
-      <section id="aboutPanos">
-        <div>
-          <h2><strong>Panos Kumasaka</strong></h2>
-          <img class="aboutImg" src="images/panoskumasaka.jpg">
-        </div>
-        <p>He is a full stack java student with a passion for creating.</p>
-      </section>
-
     </section>
   </main>
 
   <!-- This is all mobile view stuff. !-->
-  <section class="mobile-menu-view container">
+  <!-- <section class="mobile-menu-view container">
       <h2>Menu</h2>
       <a href='/' class=icon-shrink2></a>
       <ul>
         <li><a href='/social' class='icon-bubbles'></a></li>
         <li><a href='/pref' class='icon-cogs'></a></li>
-        <li><a href='/aboutus' class='icon-bullhorn'></a></li>
+        <li><a href='/about' class='icon-bullhorn'></a></li>
         <li><a href="/admin" class='icon-key2'>login</a></li>
         <li></li>
       </ul>
     </section>
   <section class='mobile-social-view container'></section>
   <section class='mobile-pref-view container'></section>
-  <section class='mobile-aboutus-view container'></section>
-  <section class='mobile-admin-view container'></section>
+  <section class='mobile-about-view container'></section>
+  <section class='mobile-admin-view container'></section> -->
   
   <!-- External CDN Resources -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -221,5 +192,7 @@
   <script src="./scripts/views/admin-view.js" type="text/javascript"></script>
   <script src="./scripts/views/about-view.js" type="text/javascript"></script>
   <script src="./scripts/controllers/routes.js" type="text/javascript"></script>
+
+  <script app.runView.initIndexPage()></script>
 </body>
 </html>

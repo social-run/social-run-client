@@ -30,8 +30,12 @@ header span {
     float: right;
 }
 
-.nav-menu {
+.nav-menu ul {
     display: none;
+}
+
+.nav-menu:hover ul {
+    display: block;
 }
 
 .nav-menu li {
@@ -39,7 +43,7 @@ header span {
 }
 
 .list-view {
-    padding-top: 65px;
+    padding-top: 85px;
     max-width: 640px;
 }
 
@@ -164,8 +168,13 @@ a {
 
 .run-container .vote-container {
     float: right;
-    margin: 0px 10px 0px 0px;
-    /* line-height: 2em; */
+    margin-top: 20px;
+}
+
+.run-container .vote-container p {
+    float: left;
+    padding-top: 10px;
+    font-size: 16px;
 }
 
 .run-container span {
@@ -200,35 +209,24 @@ a {
     padding-top: 100px;
 }
 
-.about-View p {
-    text-align: center;
-}
-
 .about-view p {
     margin: 20px 0;
 }
 
 .about-view h1, h2 {
     text-align: center;
+    font-weight: bold;
 }
 
 .about-view section p {
     padding-top: 15px;
 }
 
-#aboutLacy div {
+#aboutLacy div, #aboutMatt div {
     float: left;
 }
 
-#aboutRichard div {
-    float: right;
-}
-
-#aboutMatt div {
-    float: left;
-}
-
-#aboutPanos div {
+#aboutRichard div, #aboutPanos div {
     float: right;
 }
 
@@ -239,14 +237,70 @@ a {
 
 @media only screen and (min-width: 480px) {
 
-
+    .icon-menu {
+        display: none;
+    }
     
+    .nav-menu ul {
+        display: block;
+    }
+    
+    .nav-menu li {
+        display: inline;
+    }
+
     .list-view {
-        padding-top: 90px;
+        padding-top: 170px;
     }
 
     .detail-view {
-        padding-top: 105px;
+        padding-top: 190px;
     }
 
+    .about-view {
+        padding-top: 190px;
+    }
+
+    #aboutLacy, #aboutRichard {
+        display: block;
+        width: 45%;
+    }
+ 
+    #aboutMatt, #aboutPanos {
+        display: block;
+        width: 45%;
+    }
+
+    .about-view h2 {
+        text-align: left;
+        font-weight: bold;
+    }
+
+    #aboutOne {
+        display: inline;
+    }
+
+    #aboutLacy {
+        float: left;
+    }
+
+    #aboutRichard {
+        float: right;
+    }
+
+    #aboutMatt {
+        float: left;
+    }
+
+    #aboutPanos {
+        float: right;
+    }
+
+    .about-view section p {
+        padding-top: 0px;
+    }
+
+    #aboutLacy img, #aboutMatt img {
+        padding-right: 5px;
+    }
   }
