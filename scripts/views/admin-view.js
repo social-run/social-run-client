@@ -12,13 +12,12 @@ var app = app || {};
       event.preventDefault();
       const submittedName = $('#admin-form input')[0].value;
       console.log(submittedName);
-      localStorage.removeItem('stored');
-      localStorage.setItem('stored',submittedName);
       console.log(localStorage.stored);
       console.log(ENV);
       console.log(ENV.apiUrl);
+      localStorage.removeItem('username');
       //Adds usersubmittedNames to localstorage.
-      
+      localStorage.removeItem('username');
       $.ajax({url:`${ENV.apiUrl}/admin`,
         type:'GET',
         headers:{token:submittedName},
@@ -29,12 +28,13 @@ var app = app || {};
             console.log(respondToken);
             console.log(submittedName);
             console.log("access granted");
+            localStorage.username=submittedName;
           }
           else{
             console.log(respondToken);
             console.log(submittedName);
             console.log('rejected.')
-          })
+          }})
         .then(res =>{
           if(res===localStorage.stored)
           {console.log('Access Granted')

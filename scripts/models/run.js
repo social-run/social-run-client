@@ -31,7 +31,7 @@ ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.developmentApiUrl;
     return template(this);
   }
 
-  Run.loadAll = rows => Run.all = rows.sort((a, b) => b.title - a.title).map(run => new Run(run));
+  Run.loadAll = rows => Run.all = rows.sort((a, b) => a.run_id - b.run_id).map(run => new Run(run));
 
   Run.fetchAll = callback =>
     $.get(`${ENV.apiUrl}/api/v1/runs`)
