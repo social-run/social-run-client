@@ -8,7 +8,6 @@ var app = app || {};
 
   function resetView() {
     $('.container').hide();
-    $('.nav-menu').slideUp(350);
   }
 
   const runView = {};

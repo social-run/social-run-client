@@ -27,10 +27,10 @@
           <tr>
             <td class="run-items-distance">
               <h4>Distance:</h4>
-              <h5>{{distance}}</h5><h6>mi</h6>
+              <h5>{{distance}}</h5><h6>miles</h6>
             </td>
             <td class="run-items-elevation">
-              <h4>Elevation:</h4>
+              <h4>Climb:</h4>
               <h5>{{elevation}}</h5><h6>feet</h6>
             </td>
             <td class="run-items-votes">
@@ -45,14 +45,41 @@
 
   <script type="text/x-handlebars-template" id="run-detail-template">
     <div class="run-container">
-      <h3>{{name}}</h3>
-      <iframe src="{{route_url}}" width="640" height="480" frameborder="0"></iframe>
+      <h1>{{name}}</h1>
       <div class="run-details">
-        <h4>Distance: {{distance}} miles</h4>
-        <p>Elevation: {{elevation}} feet</p>
-        <p>{{description}}</p>
-        <table class='attraction-table'><tr class='table-heading'><td>Local Eateries</td><td>Nearby Drinkeries</td></tr><tr><td><ul class="restaurant-list"></ul></td><td><ul class='bar-list'></ul></td></tr></table>
-        <p>{{votes}}</p> <button id="vote-btn" data-id={{run_id}} class="admin">Vote</button>
+        <div class="stat-box">
+          <div class="stat-box-top">
+            <h4>Distance</h4>
+            <h5>{{distance}}</h5>
+            <h6>miles</h6>
+          </div>
+          <div class="stat-box-bottom">
+            <h4>Climb</h4>
+            <h5>{{elevation}}</h5>
+            <h6>feet</h6>
+          </div>
+        </div>
+        <div class="more-info">
+          <h3>Description:</h3>
+          <p>{{description}}</p>
+          <table>
+            <tr>
+              <td><h3>Bars</h3></td>
+              <td><h3>Restaurants</h3></td>
+            </tr>
+            <tr>
+              <td><p class="bar-list"></p></td>
+              <td><p class="restaurant-list"></p></td>
+            </tr>
+          </table>
+          <div class="vote-container">
+            <span class="vote-counter">{{votes}}</span>
+            <button id="vote-btn" data-id={{run_id}} class="admin">Vote</button>
+          </div>
+        </div>
+        <div class="map-box">
+          <iframe src="{{route_url}}"></iframe>
+        </div>
       </div>
     </div>
   </script>
@@ -67,7 +94,7 @@
     <nav class="nav-menu">
       <ul>
         <li><a href="/"><h3>Home</h3></a></li>
-        <li><a href="/aboutUs"><h3>About Us</h3></a></li>
+        <li><a href="/aboutUs"><h3>About</h3></a></li>
       </ul>
     </nav>
   </header>

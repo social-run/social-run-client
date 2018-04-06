@@ -6,7 +6,6 @@ var app = app || {};
   const adminView = {};
 
   adminView.initAdminPage = function (ctx, next) {
-    $('.nav-menu').slideUp(350);
     $('.admin-view').show();
 
     $('#admin-form').on('submit', function(event) {
