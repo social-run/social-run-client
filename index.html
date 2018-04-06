@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Social Run</title>
-  <base href="https://social-run.github.io/social-run-client/">
+  <!-- <base href="https://social-run.github.io/social-run-client/"> -->
   <!-- Comment in for deployment visibility, comment out for live-server visibility -->
   <link rel="stylesheet" href="./styles/reset.css" />
   <link rel="stylesheet" href="./styles/icons.css" />
@@ -36,7 +36,7 @@
               <h5>{{elevation}}</h5><h6>feet</h6>
             </td>
             <td class="run-items-votes">
-              <h6>0 votes</h6>
+              <h6>{{votes}} votes</h6>
 <!-- Swap this line in when we have a vote counter -->
               <!-- <h6>{{votes}} votes</h6> -->
             </td>
@@ -54,7 +54,7 @@
         <p>Elevation: {{elevation}} feet</p>
         <p>{{description}}</p>
         <table class='attraction-table'><tr class='table-heading'><td>Local Eateries</td><td>Nearby Drinkeries</td></tr><tr><td><ul class="restaurant-list"></ul></td><td><ul class='bar-list'></ul></td></tr></table>
-        <p>{{votes}}</p> <button id="vote-btn" data-id={{run_id}} class="admin">Vote</button>
+        <button id="vote-btn" data-id={{run_id}} class="admin">Vote</button>
       </div>
     </div>
   </script>
