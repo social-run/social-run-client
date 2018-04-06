@@ -2,13 +2,9 @@
 var app = app || {};
 
 (function(module) {
-  $('.icon-menu').on('click', function() {
-    $('.nav-menu').slideToggle(350);
-  })
 
   function resetView() {
     $('.container').hide();
-    $('.nav-menu').slideUp(350);
   }
 
   const runView = {};
