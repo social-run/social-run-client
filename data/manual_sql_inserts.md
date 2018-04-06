@@ -120,3 +120,9 @@ CREATE TABLE IF NOT EXISTS
     '',
     ''
   );
+
+CREATE TABLE IF NOT EXISTS
+users (
+user_id SERIAL PRIMARY KEY,
+name VARCHAR(255));
+INSERT INTO users (name) VALUES('sample');

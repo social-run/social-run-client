@@ -2,8 +2,6 @@ header {
     position: fixed;
     width: 100%;
     background-color: white;
-    /* border-bottom: solid 1px lightgray;
-    max-width: 480px; */
 }
 
 header .header-content {
@@ -34,9 +32,6 @@ header span {
 
 .nav-menu {
     display: none;
-    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), gray; */
-    /* opacity: .6; */
-    /* background: rgba(76, 175, 80, 0.3); */
 }
 
 .nav-menu li {
@@ -55,7 +50,6 @@ header span {
 .run-items-new {
     list-style: none;
     margin: 15px 0px;
-    /* box-sizing: border-box; */
     border-top: solid 1px lightgray;
 }
 
@@ -122,8 +116,20 @@ a {
     padding-top: 100px;
 }
 
+.about-View p {
+    text-align: center;
+}
+
 .about-view p {
     margin: 20px 0;
+}
+
+.about-view h1, h2 {
+    text-align: center;
+}
+
+.about-view section p {
+    padding-top: 15px;
 }
 
 #aboutLacy div {
@@ -134,33 +140,22 @@ a {
     float: right;
 }
 
-#aboutPanos div {
+#aboutMatt div {
     float: left;
 }
 
-#aboutMatt div {
+#aboutPanos div {
     float: right;
 }
 
 .aboutImg {
     width: 150px;
+    height: 150px;
 }
 
 @media only screen and (min-width: 480px) {
 
-    .icon-menu {
-        display: none;
-    }    
 
-    .nav-menu {
-        display: block;
-        margin-bottom: 10px;
-      }    
-    
-    .nav-menu li {
-        display: inline-block;
-        margin: 0 60px;
-    }
     
     .list-view {
         padding-top: 90px;
@@ -169,4 +164,5 @@ a {
     .detail-view {
         padding-top: 105px;
     }
+
   }
