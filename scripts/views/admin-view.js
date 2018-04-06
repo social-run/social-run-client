@@ -11,10 +11,7 @@ var app = app || {};
     $('#admin-form').on('submit', function(event) {
       event.preventDefault();
       const submittedName = $('#admin-form input')[0].value;
-      console.log(submittedName);
-      console.log(localStorage.stored);
-      console.log(ENV);
-      console.log(ENV.apiUrl);
+
       localStorage.removeItem('username');
       //Adds usersubmittedNames to localstorage.
       localStorage.removeItem('username');
@@ -25,9 +22,6 @@ var app = app || {};
         .then(function(respondToken){
           if(respondToken===submittedName)
           {
-            console.log(respondToken);
-            console.log(submittedName);
-            console.log("access granted");
             localStorage.username=submittedName;
           }
           else{
@@ -44,7 +38,7 @@ var app = app || {};
         })
 
         .catch(() =>page('/'));
-    
+
       adminView.verify = function(ctx, next) {
         if(!localStorage.submittedName) $('.admin').addClass('admin-only');
         else $('.admin').show();
