@@ -46,7 +46,7 @@
               <h5>{{elevation}}</h5><h6>feet</h6>
             </td>
             <td class="run-items-votes">
-              <h6>0 votes</h6>
+              <h6>{{votes}} votes</h6>
 
 <!-- Swap this line in when we have a vote counter -->
                 <!-- <h6>{{votes}} votes</h6> -->
@@ -86,7 +86,7 @@
             </tr>
           </table>
           <div class="vote-container">
-            <span class="vote-counter">{{votes}}</span>
+            <span class="vote-counter"></span>
             <button id="vote-btn" data-id={{run_id}} class="admin">Vote</button>
           </div>
         </div>
@@ -100,7 +100,7 @@
 </head>
 <body>
   <header>
-      <div class="icon-menu icon-enlarge2"></div>
+      <div class="icon-menu icon-enlarge2" href='/admin'></div>
       <div class="header-content">
         <img src="/images/social_run_title.png" />
     </div>
@@ -137,12 +137,6 @@
       </section>
     </section>
     
-    <section class="admin-view container">
-      <h2 class="view-title">Log In</h2>
-      <form id="admin-form">
-        <input type="text" name="passphrase" placeholder="login">
-        <button type="submit">Log In</button>
-      </form>
     </section><section class="admin-view container">
       <h2 class="view-title">Log In</h2>
       <form id="admin-form">

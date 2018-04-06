@@ -36,6 +36,7 @@ ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.developmentApiUrl;
   Run.fetchAll = callback =>
     $.get(`${ENV.apiUrl}/api/v1/runs`)
       .then(Run.loadAll)
+      .then(app.adminView.initAdminPage())
       .then(callback)
       .catch(errorCallback);
 

@@ -5,7 +5,6 @@ var app = app || {};
   $('.icon-menu').on('click', function() {
     $('.nav-menu').slideToggle(350);
   })
-
   function resetView() {
     $('.container').hide();
     $('.nav-menu').slideUp(350);
@@ -45,17 +44,18 @@ var app = app || {};
       if(localStorage.username)
       {
         let runID=event.target.getAttribute('data-id');
-
+        console.log('event handler.')
         $('#vote-btn:last').prop('disabled',true),
         $.get(`${ENV.apiUrl}/api/v1/runs/${runID}/votes`)
           .then(function(newVotes){console.log(newVotes);
+            console.log('votes checked');
             app.Run.all[routeIndex].votes=newVotes;
             $('#vote-btn').text(`${app.Run.all[routeIndex].votes} likes`)})
           .catch(console.error)
       }
       else
       {
-        app.adminView.initAdminPage()
+        $('#votebtn').innerHtml('Incorrect Username');
       }});
   }
 
