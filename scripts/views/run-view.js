@@ -40,14 +40,13 @@ var app = app || {};
         $('.bar-list:last').append(`<li>${bars[i]}</li>`)
       }}
 
+
     $('#vote-btn').on('click', function(){
       if(localStorage.username)
       {
         let runID=event.target.getAttribute('data-id');
 
         $('#vote-btn:last').prop('disabled',true),
-        console.log(ENV);
-        console.log(runID);
         $.get(`${ENV.apiUrl}/api/v1/runs/${runID}/votes`)
           .then(function(newVotes){console.log(newVotes);
             app.Run.all[routeIndex].votes=newVotes;
@@ -56,7 +55,6 @@ var app = app || {};
       }
       else
       {
-        console.log('no username');
         app.adminView.initAdminPage()
       }});
   }
