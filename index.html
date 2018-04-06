@@ -37,6 +37,7 @@
             </td>
             <td class="run-items-votes">
               <h6>{{votes}} votes</h6>
+            </td>
             </tr>
           </table>
     </li>
@@ -72,8 +73,7 @@
             </tr>
           </table>
           <div class="vote-container">
-            <span class="vote-counter"></span>
-            <button id="vote-btn" data-id={{run_id}} class="admin">Vote</button>
+            <p>{{votes}}</p> <button id="vote-btn" data-id={{run_id}} class="admin">Vote</button>
           </div>
         </div>
         <div class="map-box">
@@ -86,8 +86,7 @@
 </head>
 <body>
   <header>
-      <div class="icon-menu icon-enlarge2" href='/social-run-client/admin'></div>
-
+      <div class="icon-menu" href='/social-run-client/admin'></div>
       <div class="header-content">
         <img src="images/social_run_title.png" />
     </div>
@@ -118,18 +117,7 @@
     </section>
 
     <section class="detail-view container">
-
-      <section class="run-detail">
-      </section>
-    </section>
-    
-    </section><section class="admin-view container">
-      <h2 class="view-title">Log In</h2>
-      <form id="admin-form">
-        <input type="text" name="passphrase" placeholder="login">
-        <button type="submit">Log In</button>
-      </form>
-
+      <section class="run-detail"></section>
     </section>
 
     <section class="about-view container">
@@ -159,7 +147,7 @@
         <section id="aboutMatt">
           <div>
             <h2><strong>Matt Harding</strong></h2>
-            <img class="aboutImg" src="images/mattharding.JPG">
+            <img class="aboutImg" src="images/mattharding.jpg">
           </div>
           <p>He is a washed-up internet dancing sensation-turned stay-at-home dad. He is learning to code so his resume has something on it that isn't those two things. He once went sledding in Antarctica, swam with a humpback whale in Tonga, barfed atop Kilimanjaro, and watched a shooting star cross over the dunes of Timbuktu.</p>
         </section>
