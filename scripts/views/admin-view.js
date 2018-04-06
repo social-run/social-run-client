@@ -7,12 +7,11 @@ var app = app || {};
 
   adminView.initAdminPage = function (ctx) {
     console.log('admin init')
-    $('.nav-menu').slideUp(350);
     $('.admin-view').show();
     $('#admin-form').on('submit', function(event) {
       event.preventDefault();
       const submittedName = $('#admin-form input')[0].value;
-      //Adds usersubmittedNames to localstorage.
+      //Adds user submitted Names to localStorage
       localStorage.removeItem('username');
       console.log(ENV.apiUrl);
       $.ajax({url:`${ENV.apiUrl}/admin`,
